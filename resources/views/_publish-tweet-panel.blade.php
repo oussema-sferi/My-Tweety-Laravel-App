@@ -1,4 +1,4 @@
-<div class="border border-blue-400 rounded-lg px-8 py-6">
+<div class="border border-blue-400 rounded-lg px-8 py-6 mb-8">
   <form action="">
     <textarea name="body" class="w-full" placeholder="What's up?">
 

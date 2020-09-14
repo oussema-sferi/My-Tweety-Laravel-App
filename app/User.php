@@ -36,6 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getAvatarAttribute()
+    {
+        return "https://picsum.photos/40?hmac=" . $this->email;
+    }
+
     public function timeline()
     {
         return Tweet::where('user_id', $this->id)->latest()->get();
